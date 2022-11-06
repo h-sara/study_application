@@ -14,6 +14,7 @@ class ListsController < ApplicationController
   end
 
   def index
+    @lists = List.all
   end
 
   def show
@@ -21,7 +22,7 @@ class ListsController < ApplicationController
 
   def edit
   end
-  
+
   private
   # ストロングパラメータ
   def list_params
